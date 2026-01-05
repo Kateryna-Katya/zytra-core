@@ -1551,3 +1551,54 @@ body {
     display: flex;
   }
 }
+/* --- Стили для юридических страниц --- */
+.pages {
+  padding: 150px 0 100px;
+  background: radial-gradient(circle at top left, rgba(0, 242, 255, 0.05), transparent 40%);
+  min-height: 80vh;
+}
+
+.pages h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, var(--white), var(--text-muted));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pages h2 {
+  font-size: 24px;
+  color: var(--accent-cyan);
+  margin: 40px 0 20px;
+}
+
+.pages p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.pages ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.pages ul li {
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+  list-style: disc;
+}
+
+/* Ссылка возврата */
+.pages__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
