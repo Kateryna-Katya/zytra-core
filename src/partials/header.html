@@ -1,19 +1,37 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+<header class="header" id="header">
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__icon"></span>
+          <span class="logo__text">Zytra<span>Core</span></span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="nav">
+          <ul class="nav__list">
+              <li><a href="#hero" class="nav__link">Главная</a></li>
+              <li><a href="#about" class="nav__link">О платформе</a></li>
+              <li><a href="#features" class="nav__link">Преимущества</a></li>
+              <li><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li><a href="#blog" class="nav__link">Блог</a></li>
+          </ul>
+      </nav>
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать</a>
+          <button class="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-overlay__container">
+      <nav class="nav-mobile">
+          <ul class="nav-mobile__list">
+              <li><a href="#hero" class="nav-mobile__link">Главная</a></li>
+              <li><a href="#about" class="nav-mobile__link">О платформе</a></li>
+              <li><a href="#features" class="nav-mobile__link">Преимущества</a></li>
+              <li><a href="#innovations" class="nav-mobile__link">Инновации</a></li>
+              <li><a href="#blog" class="nav-mobile__link">Блог</a></li>
+              <li><a href="#contact" class="nav-mobile__link">Начать</a></li>
+          </ul>
+      </nav>
+  </div>
+</div>
